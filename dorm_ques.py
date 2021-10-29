@@ -1,3 +1,6 @@
+# For every input of dorm number rm (like 556), the program will give an output t, that x! with rm zeros at end. 
+# and dorm users can use a question "How many zeros are in the end of t" to show their dorm number.
+
 #define function
 def count5(t):
     sum=0
@@ -5,11 +8,11 @@ def count5(t):
         sum+=int(t/5)
         t=t/5
     return sum
-#预设值
+#default number
 t = 2000
 #input room number
 rm = int(input('please input your room number'))
-#test validity
+#test validity, I restrict dm between 0 and 10000
 if rm<0 or rm>10000 :
     print('inorder to save me, please only input number in [0,10000]')
 else:
